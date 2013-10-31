@@ -14,4 +14,8 @@ describe "web requests" do
     expect {post '/restaurants', params}.to change {Restaurant.all.length}.by(0)
   end
 
+  it "allows a user to delete a restaurant" do
+    params = { 'restaurant' => {'id' => 1} }
+    expect {delete '/restaurants/id', params}.to change {Restaurant.all.length}.by(-1)
+  end
 end

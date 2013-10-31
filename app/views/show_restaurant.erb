@@ -1,3 +1,18 @@
 Restaurant #<%= @restaurant.id %>: <%= @restaurant.name %>
 <br>
 Where: <%= @restaurant.location %>
+<form method="DELETE" action="/restaurants">
+<!--   <label>Name:
+    <input id="name" name="restaurant[name]">
+  </label>
+
+  <label>Location:
+    <input id="location" name="restaurant[location]">
+  </label>
+
+  <label>Cuisine:
+    <input id="cuisine" name="restaurant[cuisine]">
+  </label>
+ -->
+  <button>Delete Restaurant!</button>
+</form>
